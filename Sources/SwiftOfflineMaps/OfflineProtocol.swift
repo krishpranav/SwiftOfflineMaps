@@ -9,7 +9,10 @@ import Foundation
 import MapKit
 
 public protocol OfflineProtocol {
-    var config: OfflineCacheConfig { get set }
-    
+    var config: OfflineConfig { get set }
+
     func url(forTilePath path: MKTileOverlayPath) -> URL
+    
+    func loadTile(at path: MKTileOverlayPath, result: @escaping (Data?, Error?) -> Void)
+    
 }
