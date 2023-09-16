@@ -12,4 +12,6 @@ public struct ZoomableTile {
     let maximumZPath: MKTileOverlayPath
     
     let rect: MKMapRect
+    
+    let overZoom: Int
 }
