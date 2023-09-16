@@ -10,7 +10,7 @@ import Foundation
 import CoreGraphics
 
 
-public struct OfflineCacheConfig  {
+public struct OfflineConfig  {
     
     public var urlTemplate: String = "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     
