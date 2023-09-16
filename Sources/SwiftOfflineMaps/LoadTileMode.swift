@@ -9,5 +9,7 @@ import Foundation
 
 public enum LoadTileMode {
     case cacheThenServer
+    case serverThenCache
     case cacheOnly
+    case serverOnly
 }
